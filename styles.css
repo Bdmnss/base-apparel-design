@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    color: #ce9898;
+    display: grid;
+    grid-template-columns: 60fr 40fr;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero-img {
+    display: none;
+}
+
+.photo-div{
+    background-image: url('./images/hero-desktop.jpg');
+    background-size: cover;
+}
+
+.base-apparel {
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-color: hsl(0, 100%, 98%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-div {
+    max-width: 440px;
+    margin-top: 50px;
+    margin-left: 165px;
+}
+
+
+.logo{
+    margin-bottom: 120px;
+    width: 158px;
+    height: 33px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 17.32px;
+    line-height: 71px;
+    color: #423a3a;
+    margin-bottom: 30px;
+}
+
+span{
+    color: #ce9898;
+    line-height: 64px;
+    font-weight: 300;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.input-div {
+position: relative;
+
+}
+
+input {
+    border: 1px solid #ce9898;
+    border-radius: 28px;
+    width: 100%;
+    outline: none;
+    background-color:  hsl(0, 100%, 98%);
+    padding: 23px 32px;
+    padding-right: 0;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: #ce9898;
+}
+
+.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-image: linear-gradient(119deg, #f8bfbf -26%, #ee8b8b 74%);
+    border-radius: 28px;
+    box-shadow: -1px 0px 12px #f8bfbf;
+    height: 100%;
+    width: 25%;
+    cursor: pointer;
+}
+
+@media(max-width: 768px){
+    body {
+        grid-template-columns: 1fr;
+        overflow: visible;
+    }
+
+    .photo-div {
+        background-image: none;
+    }
+
+    .main-div{
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .logo{
+        margin-left: 30px;
+        margin-bottom: 40px;
+        width: 100px;
+        height: 20px;
+    }
+    
+    .hero-img {
+        display: inline-block;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: 10.83px;
+        line-height: 42px;
+        text-align: center;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin: 0 auto 30px auto;
+        width: 90%;
+    }
+
+    input {
+        width: 90%;
+    }
+
+    .text-div{
+        padding: 40px;
+    }
+
+    .btn {
+        right: 5%;
+    }
+    
+}
